@@ -13,7 +13,7 @@ const SignIn = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://chrono-sand.vercel.app/auth/signin", {
+      const response = await fetch("https://backend-web-chrono-cam.vercel.app/auth/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const SignIn = () => {
         <div className="text-center mt-6">
           <p className="text-gray-500">or sign in with</p>
           <a
-            href="https://chrono-sand.vercel.app/auth/google"
+            href="https://backend-web-chrono-cam.vercel.app/auth/google"
             className="mt-4 inline-flex items-center justify-center w-full p-3 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-md text-base font-normal transition duration-200"
           >
             <img

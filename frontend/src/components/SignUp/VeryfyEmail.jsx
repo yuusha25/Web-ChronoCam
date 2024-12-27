@@ -10,7 +10,7 @@ const VerifyEmail = () => {
 
   const handleVerify = async () => {
     try {
-      const response = await fetch("https://chrono-sand.vercel.app/auth/verify-email", {
+      const response = await fetch("https://backend-web-chrono-cam.vercel.app/auth/verify-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

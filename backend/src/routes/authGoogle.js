@@ -12,7 +12,7 @@ passport.use(
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL:
         process.env.NODE_ENV === "production"
-          ? "https://chrono-sand.vercel.app/auth/google/callback"
+          ? "https://backend-web-chrono-cam.vercel.app/auth/google/callback"
           : "http://localhost:8080/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
