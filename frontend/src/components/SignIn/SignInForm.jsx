@@ -13,7 +13,7 @@ const SignIn = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://backend-web-chrono-cam.vercel.app/auth/signin", {
+      const response = await fetch("https://chrono-sand.vercel.app/auth/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
