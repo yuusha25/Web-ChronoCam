@@ -28,6 +28,7 @@ const app = express();
 app.use(
   cors({
     origin: [
+      "https://web-chrono-cam-six.vercel.app",
       "https://chronocam.vercel.app",
       "https://accounts.google.com",
       "https://backend-web-chrono-cam.vercel.app/auth/google/callback",
