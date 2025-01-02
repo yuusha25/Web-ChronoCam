@@ -18,3 +18,9 @@
 - pada terminal, lakukan `npm install`
 - untuk menjalankan froned, pada teriminal promp `npm run dev`
 
+
+## Link Web
+
+Frontend : https://chronocam.vercel.app/
+
+Backend : https://chrono-sand.vercel.app/
