@@ -1,7 +1,9 @@
 ﻿# Web-ChronoCam
 
 ## Kelompok 9
+
     | Nama | NRP |
+    | :--------: | :------------: |
     | Nabil Julian Syah | 5025231023 |
     | Kasyiful Kurob | 5025231026 |
     | Razky Ageng Syahputra | 5025231056 |
