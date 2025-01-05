@@ -16,7 +16,7 @@ const validateFileType = (buffer) => {
     "89504e47": "image/png",
     47494638: "image/gif",
   };
-  return Object.values(validSignatures).includes(fileSignature);
+  return Object.keys(validSignatures).includes(fileSignature);
 };
 
 export const uploadMedia = async (req, res) => {
