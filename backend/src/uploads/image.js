@@ -14,7 +14,7 @@ const uploadLimiter = rateLimit({
 
 router.post(
   "/",
-  // authMiddleware,
+  authMiddleware,
   uploadLimiter,
   uploadMiddleware.array("foto", 5), // Limit to 5 files max
   uploadMedia
