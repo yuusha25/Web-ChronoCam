@@ -33,8 +33,9 @@
 - pilih repository Web-Chronocam
 - pada document root pilih `backend`
 - tekan Environtment Variables
+  ![gambar](https://github.com/user-attachments/assets/511963b9-880d-417e-8976-c53e5030b7ba)
 - copas env.example
-- 
+- lalu deploy
 
 ## Link Web
 
