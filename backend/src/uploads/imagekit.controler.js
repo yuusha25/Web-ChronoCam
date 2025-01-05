@@ -30,7 +30,7 @@ export const uploadMedia = async (req, res) => {
 
     const uploadResults = [];
 
-    // for (const file of req.files) {
+    for (const file of req.files) {
     //   if (!validateFileType(file.buffer)) {
     //     return res.status(400).json({
     //       status: false,
