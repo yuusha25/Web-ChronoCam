@@ -16,7 +16,6 @@ const validateFileType = (buffer) => {
     "89504e47": "image/png",
     47494638: "image/gif",
   };
-  console.log("File signature:", fileSignature);
   return Object.values(validSignatures).includes(fileSignature);
 };
 
@@ -32,6 +31,8 @@ export const uploadMedia = async (req, res) => {
     const uploadResults = [];
 
     for (const file of req.files) {
+      const fileSignature = file.buffer.toString("hex", 0, 4);
+      console.log("File signature:", fileSignature);
       if (!validateFileType(file.buffer)) {
         return res.status(400).json({
           status: false,
