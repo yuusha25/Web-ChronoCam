@@ -10,7 +10,7 @@
 
 ## Langkah - langkah installasi
 > Backend
-- ubah file example.env menjadi .env
+- ubah file .env.example menjadi .env
 - pada terminal, lakukan `npm install`
 - untuk menjalankan backend, pada teriminal promp `npm run dev`
 
