@@ -50,7 +50,9 @@ const Header = () => {
 
   const fetchUsername = async (userId) => {
     try {
-      const response = await fetch(`https://chrono-sand.vercel.app/api/users/${userId}`);
+      const response = await fetch(
+        `https://chrono-sand.vercel.app/api/users/${userId}`
+      );
       const data = await response.json();
       if (data.username) {
         localStorage.setItem("username", data.username);
@@ -73,10 +75,13 @@ const Header = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("https://chrono-sand.vercel.app/auth/logout", {
-        method: "POST",
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://chrono-sand.vercel.app/auth/logout",
+        {
+          method: "POST",
+          credentials: "include",
+        }
+      );
 
       if (response.ok) {
         localStorage.removeItem("userId");
@@ -123,10 +128,10 @@ const Header = () => {
           Home
         </Link>
         <Link
-          to="/playbacks"
-          className={`${getLinkClass("/playbacks")} text-sm xl:text-base`}
+          to="/Upload"
+          className={`${getLinkClass("/Upload")} text-sm xl:text-base`}
         >
-          Playback
+          Upload
         </Link>
 
         <img src={pipe} alt="separator" className="h-4 xl:h-6" />
@@ -204,10 +209,10 @@ const Header = () => {
               Home
             </Link>
             <Link
-              to="/playbacks"
-              className={`${getLinkClass("/playbacks")} text-sm sm:text-base`}
+              to="/Upload"
+              className={`${getLinkClass("/Upload")} text-sm sm:text-base`}
             >
-              Playback
+              Upload
             </Link>
             {userId ? (
               <>

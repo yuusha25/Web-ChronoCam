@@ -6,17 +6,17 @@ import SignInPage from "../pages/SignInPage";
 import ErrorPage from "../pages/ErrorPage";
 import RouterErrorBoundary from "./RouterErrorBoundary";
 import VerifyEmail from "../components/SignUp/VeryfyEmail";
-import ProfilePage from '../pages/ProfilePage';
+import ProfilePage from "../pages/ProfilePage";
 import LoginSuccess from "../components/loginsuccess";
 
 const routes = [
   {
     index: true,
-    element: <LandingPage />,
+    element: <PlaybacksPage />,
   },
   {
-    path: "/playbacks",
-    element: <PlaybacksPage />,
+    path: "/Upload",
+    element: <LandingPage />,
   },
   {
     path: "/signup",
@@ -28,18 +28,18 @@ const routes = [
   },
   {
     path: "/verify-email",
-    element: <VerifyEmail/>,
+    element: <VerifyEmail />,
   },
   {
     path: "*",
     element: <ErrorPage />,
   },
   {
-    path: '/Profile',
+    path: "/Profile",
     element: <ProfilePage />,
   },
   {
-    path: '/login-success',
+    path: "/login-success",
     element: <LoginSuccess />,
   },
 ];
