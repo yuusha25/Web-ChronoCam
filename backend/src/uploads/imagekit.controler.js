@@ -10,6 +10,8 @@ const sanitizeFileName = (fileName) => {
 const validateFileType = (buffer) => {
   const fileSignature = buffer.toString("hex", 0, 4);
   const validSignatures = {
+    ffd8ffe1: "image/jpeg", // JPG variant
+    ffd8ffe2: "image/jpeg", // JPG variant
     ffd8ffe0: "image/jpeg",
     "89504e47": "image/png",
     47494638: "image/gif",
