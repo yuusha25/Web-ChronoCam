@@ -3,9 +3,9 @@ import File from "../models/upload.js";
 import crypto from "crypto";
 import path from "path";
 
-const sanitizeFileName = (fileName) => {
-  return crypto.randomBytes(16).toString("hex") + path.extname(fileName);
-};
+// const sanitizeFileName = (fileName) => {
+//   return crypto.randomBytes(16).toString("hex") + path.extname(fileName);
+// };
 
 // const validateFileType = (buffer) => {
 //   const fileSignature = buffer.toString("hex", 0, 4);
@@ -39,12 +39,13 @@ export const uploadMedia = async (req, res) => {
     //   }
 
       const strfile = file.buffer.toString("base64");
-      const safeFileName = sanitizeFileName(file.originalname);
+      // const safeFileName = sanitizeFileName(file.originalname);
+      const safeFileName = "hehe";
 
       const datafile = await imagekit.upload({
         file: strfile,
         fileName: safeFileName,
-        useUniqueFileName: true,
+        // useUniqueFileName: true,
         tags: [`user-${req.user.id}`], // Add user ID as tag for tracking
         folder: `/uploads/${req.user.id}`, // Organize files by user
       });
