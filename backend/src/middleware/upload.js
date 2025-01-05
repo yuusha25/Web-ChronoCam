@@ -1,6 +1,6 @@
 import multer from "multer";
 
-const allowedMimeTypes = ["image/jpeg", "image/png", "image/gif"];
+const allowedMimeTypes = ["image/jpg","image/jpeg", "image/png", "image/gif"];
 const maxFileSize = 5 * 1024 * 1024; // 5MB
 
 export const uploadMiddleware = multer({
