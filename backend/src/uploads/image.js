@@ -12,12 +12,19 @@ const uploadLimiter = rateLimit({
   message: "Too many uploads from this IP, please try again later",
 });
 
-router.post(
-  "/",
-  // authMiddleware,
-  uploadLimiter,
-  uploadMiddleware.array("foto", 5), // Limit to 5 files max
-  uploadMedia
-);
+// router.post(
+//   "/",
+//   // authMiddleware,
+//   uploadLimiter,
+//   uploadMiddleware.array("foto", 5), // Limit to 5 files max
+//   uploadMedia
+// );
+
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 1 * 1024 * 1024 * 1024 },
+});
+
+router.post("/", upload.array("foto"), uploadMedia);
 
 export default router;
