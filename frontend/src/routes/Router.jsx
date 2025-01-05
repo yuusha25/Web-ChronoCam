@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import LandingPage from "../pages/LandingPage";
+// import LandingPage from "../pages/LandingPage";
 import PlaybacksPage from "../pages/PlaybacksPage";
 import SignUpPage from "../pages/SignUpPage";
 import SignInPage from "../pages/SignInPage";
@@ -14,10 +14,10 @@ const routes = [
     index: true,
     element: <PlaybacksPage />, // as /
   },
-  {
-    path: "/Upload",
-    element: <LandingPage />,
-  },
+  // {
+  //   path: "/upload",
+  //   element: <LandingPage />,
+  // },
   {
     path: "/signup",
     element: <SignUpPage />,
