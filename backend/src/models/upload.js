@@ -22,7 +22,7 @@ const fileSchema = new mongoose.Schema({
   mimeType: {
     type: String,
     required: true,
-    enum: ["image/jpeg", "image/png", "image/gif"],
+    enum: ["image/jpg","image/jpeg", "image/png", "image/gif"],
     description: "File type validation",
   },
   size: {
