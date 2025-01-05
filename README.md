@@ -22,7 +22,8 @@
 > Frontend
 - Login vercel, sambungkan akun github
 - add new project
-  ![gambar](https://github.com/user-attachments/assets/e0896576-5d18-42e5-acdf-6956a70bcb4b)  
+  <img src="![gambar](https://github.com/user-attachments/assets/e0896576-5d18-42e5-acdf-6956a70bcb4b) " alt="Deskripsi Gambar" width="300">
+   
 - pilih repository Web-Chronocam
   ![gambar](https://github.com/user-attachments/assets/648d1e08-0db1-44f5-9f7c-d1b3d6dc74b1)
 - pada root directory pilih `frontend`
