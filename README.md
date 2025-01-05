@@ -38,7 +38,7 @@
 - lalu deploy
 
 > tambahan
-- pada tambahkan link frontend pada middleware CORS dalam file ./backend/server.js
+- tambahkan link frontend pada middleware CORS dalam file ./backend/server.js
 - <img src="https://github.com/user-attachments/assets/5492fb86-d01e-4e77-8fdd-968eef80ded8" alt="Deskripsi Gambar" width="300">
 - tambahkan juga pada Authorized redirect URIs
 - <img src="https://github.com/user-attachments/assets/c7608463-17e0-4ed2-a4b1-5825ef2af65c" alt="Deskripsi Gambar" width="300">
