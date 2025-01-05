@@ -68,7 +68,7 @@ const UploadForm = () => {
       if (!response.ok) {
         if (response.status === 401) {
           // Redirect to login if session is invalid
-          navigate("/signin");
+          navigate("/");
           return;
         }
         throw new Error(`HTTP error! status: ${response.status}`);
