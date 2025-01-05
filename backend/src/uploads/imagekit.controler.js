@@ -16,7 +16,7 @@ const validateFileType = (buffer) => {
     "89504e47": "image/png",
     47494638: "image/gif",
   };
-
+  console.log("File signature:", fileSignature);
   return Object.values(validSignatures).includes(fileSignature);
 };
 
