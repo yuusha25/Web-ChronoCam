@@ -69,6 +69,8 @@ export const uploadMedia = async (req, res) => {
 
       await newFile.save();
       uploadResults.push(datafile);
+      
+    console.error("Error bang during file upload:", error);
     }
 
     res.status(201).json({
