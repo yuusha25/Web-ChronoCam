@@ -12,7 +12,7 @@ import LoginSuccess from "../components/loginsuccess";
 const routes = [
   {
     index: true,
-    element: <PlaybacksPage />,
+    element: <PlaybacksPage />, // as /
   },
   {
     path: "/Upload",
