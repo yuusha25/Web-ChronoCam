@@ -32,7 +32,7 @@ const SignUp = () => {
     console.log("Form submitted with:", formData);
 
     try {
-      const response = await fetch("hhttps://backend-web-chrono-cam.vercel.app/auth/signup", {
+      const response = await fetch("https://chrono-sand.vercel.app/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
